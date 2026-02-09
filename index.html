@@ -17,13 +17,18 @@
     <!-- HEADER -->
     <header class="header" id="header">
         <div class="nav-container">
-            <a href="#" class="logo">LM</a>
+            <a href="#" class="logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">LM</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
             <nav>
-                <ul class="nav-menu">
+                <ul class="nav-menu" id="navMenu">
                     <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
                     <li><a href="#experience" class="nav-link">Experience</a></li>
                     <li><a href="#skills" class="nav-link">Skills</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="#contact" class="nav-link nav-link-cta">Contact</a></li>
                 </ul>
                 <div class="mobile-toggle" id="mobileToggle">
                     <span></span>
@@ -36,7 +41,7 @@
 
     <!-- HERO SECTION -->
     <section class="hero" id="hero">
-        <!-- Particle Canvas Background -->
+        <!-- Wave Canvas Background -->
         <canvas id="hero-canvas"></canvas>
         <div class="hero-content">
             <div class="hero-label">Portfolio 2026</div>
@@ -44,8 +49,8 @@
                 Leonardo<br>
                 <span class="accent">Marchesini</span>
             </h1>
-            <p class="hero-subtitle">Business Information Systems Graduate | Digital Enthusiast</p>
-            <p class="hero-tagline">Proactive, dynamic, and ready for new challenges in the digital world.</p>
+            <p class="hero-subtitle">AI Development & Data Analysis Student | Digital Enthusiast</p>
+            <p class="hero-tagline">Building the future of intelligent systems through code. Specializing in Python, machine learning, and data-driven solutions. Lifelong tech enthusiast turned professional developer.</p>
             <div class="hero-cta">
                 <a href="#contact" class="btn btn-primary">Get in Touch</a>
                 <a href="#about" class="btn btn-secondary">Learn More</a>
@@ -67,11 +72,15 @@
             
             <div class="about-grid">
                 <div class="about-content">
-                    <p>22 Years Old. Based in Verona, Italy. I am a motivated individual with a diploma in Business Information Systems. I combine a passion for technology with the discipline learned through years of competitive sports.</p>
-                    
-                    <p>My journey in technology started early, driven by curiosity and a desire to understand how digital systems work. This curiosity led me to pursue formal education in Business Information Systems, where I developed both technical skills and business acumen.</p>
-                    
-                    <p>Sports have been integral to my personal development. I've played competitive basketball since age 5, which taught me teamwork, resilience, and strategic thinking. I also enjoy skiing and volleyball, activities that continue to fuel my competitive spirit and love for challenges.</p>
+                    <p>
+                        I've been fascinated by technology since childhood, taking apart computers and experimenting with software before I could fully understand how they worked. That early curiosity evolved into a structured technical education and now drives my pursuit of expertise in artificial intelligence and data analysis.
+                    </p>
+                    <p>
+                        Currently enrolled at ITS Digital Academy, I'm developing advanced skills in AI development and data analysis while building real-world projects that bridge theoretical knowledge with practical application. My approach combines rigorous technical foundations with creative problem-solving.
+                    </p>
+                    <p>
+                        Beyond academics, I've gained hands-on experience through entrepreneurial ventures in e-commerce and digital marketing, developing a keen understanding of how technology creates business value. This blend of technical depth and commercial awareness shapes my perspective as a developer.
+                    </p>
                 </div>
                 
                 <div>
@@ -86,7 +95,7 @@
                         </div>
                         <div class="stat-card">
                             <div class="stat-label">Focus</div>
-                            <div class="stat-value">Tech & Business</div>
+                            <div class="stat-value">AI & Data Analysis</div>
                         </div>
                         <div class="stat-card">
                             <div class="stat-label">Basketball</div>
@@ -98,11 +107,69 @@
         </div>
     </section>
 
+    <section class="section" id="education">
+        <div class="section-container">
+            <div class="section-header">
+                <div class="section-label">Academic Path</div>
+                <h2 class="section-title">Education</h2>
+            </div>
+            
+            <div class="education-grid">
+                <div class="education-card featured">
+                    <div class="edu-card-header">
+                        <div class="edu-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 14L21 9L12 4L3 9L12 14Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 14L21 9V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6 11.5V16C6 16 7.5 18 12 18C16.5 18 18 16 18 16V11.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <span class="edu-badge">Current</span>
+                    </div>
+                    <h3 class="edu-title">AI Developer & Data Analyst</h3>
+                    <div class="edu-institution">ITS Digital Academy "Mario Volpato"</div>
+                    <div class="edu-period">2025 — 2027</div>
+                    <p class="edu-description">
+                        Two-year Higher Technical Specialization focused on AI development and data analysis. Comprehensive program covering machine learning, statistical learning, and production-grade development.
+                    </p>
+                    <div class="curriculum-box">
+                        <h4 class="curriculum-title">Core Curriculum</h4>
+                        <div class="curriculum-grid">
+                            <span class="curr-item">Python</span>
+                            <span class="curr-item">Machine Learning</span>
+                            <span class="curr-item">Statistics</span>
+                            <span class="curr-item">Data Viz</span>
+                            <span class="curr-item">SQL</span>
+                            <span class="curr-item">AI Dev</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-card">
+                    <div class="edu-card-header">
+                        <div class="edu-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" stroke-width="2"/>
+                                <path d="M7 8H17M7 12H17M7 16H13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="edu-title">Business Information Systems</h3>
+                    <div class="edu-institution">Marco Polo Institute</div>
+                    <div class="edu-period">2019 — 2024</div>
+                    <p class="edu-description">
+                        High school diploma in Business Information Systems. Studied business administration, economics, and information technology fundamentals. Graduated with 81/100, developing foundational technical and business knowledge.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- EXPERIENCE SECTION -->
     <section class="section" id="experience">
         <div class="section-container">
             <div class="section-header">
-                <div class="section-label">Background</div>
+                <div class="section-label">Work History</div>
                 <h2 class="section-title">Experience</h2>
             </div>
             
@@ -110,12 +177,12 @@
                 <div class="experience-card">
                     <div class="experience-header">
                         <div>
-                            <h3 class="experience-title">Private Dropshipping Business</h3>
-                            <div class="experience-period">Jun 2023 - Present</div>
+                            <h3 class="experience-title">E-commerce Entrepreneur</h3>
+                            <div class="experience-period">Self-Employed · 2023 - Present</div>
                         </div>
                     </div>
                     <p class="experience-description">
-                        Managed online stores, product selection, supplier relations, and executed digital marketing strategies. Developed expertise in e-commerce operations, customer acquisition, and data-driven decision making. Successfully navigated the competitive landscape of online retail through strategic positioning and continuous optimization.
+                        Founded and operated multiple e-commerce ventures, managing end-to-end operations from supplier relationships to digital marketing campaigns. Developed proficiency in data analytics, conversion optimization, and customer acquisition strategies while scaling businesses in competitive markets.
                     </p>
                     <div class="experience-tags">
                         <span class="tag">E-commerce</span>
@@ -128,12 +195,12 @@
                 <div class="experience-card">
                     <div class="experience-header">
                         <div>
-                            <h3 class="experience-title">Crew Member</h3>
-                            <div class="experience-period">McDonald's · Jul 2022 - Oct 2022</div>
+                            <h3 class="experience-title">Customer Service</h3>
+                            <div class="experience-period">Various Roles · 2022 - 2024</div>
                         </div>
                     </div>
                     <p class="experience-description">
-                        Handled food preparation, order processing, customer service, and cash management in a fast-paced environment. Developed strong multitasking abilities and learned to maintain quality standards under pressure. Enhanced communication skills through daily customer interactions and team collaboration.
+                        Extensive experience in customer-facing roles across various sectors. Developed strong communication skills, ability to work effectively under pressure, and understanding of operational efficiency in fast-paced environments.
                     </p>
                     <div class="experience-tags">
                         <span class="tag">Customer Service</span>
@@ -209,44 +276,72 @@
     </section>
 
     <!-- CONTACT SECTION -->
-    <section class="section" id="contact">
+    <section class="section section-contact" id="contact">
         <div class="section-container">
             <div class="contact-content">
                 <div class="section-header">
                     <div class="section-label">Get in Touch</div>
-                    <h2 class="section-title">Contact</h2>
+                    <h2 class="section-title">Let's Connect</h2>
                 </div>
                 
-                <h3 class="contact-cta mb-lg">Ready to collaborate?</h3>
+                <p class="contact-intro">I'm always open to discussing new opportunities, collaborations, or just having a conversation about technology and innovation. Feel free to reach out through any of these channels:</p>
                 
                 <div class="contact-grid">
-                    <a href="mailto:marchesinileonardo04@gmail.com" class="contact-card">
-                        <div class="contact-icon">@</div>
+                    <a href="mailto:marchesinileonardo04@gmail.com" class="contact-card contact-card-clickable">
+                        <div class="contact-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </div>
                         <div class="contact-label">Email</div>
                         <div class="contact-value">marchesinileonardo04@gmail.com</div>
+                        <div class="contact-arrow">→</div>
                     </a>
                     
-                    <a href="tel:+393317137221" class="contact-card">
-                        <div class="contact-icon">#</div>
+                    <a href="tel:+393317137221" class="contact-card contact-card-clickable">
+                        <div class="contact-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                        </div>
                         <div class="contact-label">Phone</div>
                         <div class="contact-value">+39 331 7137 221</div>
+                        <div class="contact-arrow">→</div>
                     </a>
                     
+                    <a href="https://www.linkedin.com/in/leonardo-marchesini-2a6459319/" target="_blank" rel="noopener" class="contact-card contact-card-clickable">
+                        <div class="contact-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-label">LinkedIn</div>
+                        <div class="contact-value">Leonardo Marchesini</div>
+                        <div class="contact-arrow">→</div>
+                    </a>
+
+                    <a href="https://github.com/marchez-z" target="_blank" rel="noopener" class="contact-card contact-card-clickable">
+                        <div class="contact-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-label">GitHub</div>
+                        <div class="contact-value">@marchez-z</div>
+                        <div class="contact-arrow">→</div>
+                    </a>
+
                     <div class="contact-card">
-                        <div class="contact-icon">🟢</div>
+                        <div class="contact-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
                         <div class="contact-label">Location</div>
                         <div class="contact-value">Verona, Italy</div>
                     </div>
-
-                    <a href="https://www.linkedin.com/in/leonardo-marchesini-2a6459319/" target="_blank" class="contact-card">
-                    <div class="contact-icon">in</div>
-                    <div class="contact-label">LinkedIn</div>
-                    <div class="contact-value">Leonardo Marchesini</div>
-                    </a>
-                </div>
-                
-                <div style="margin-top: var(--space-lg);">
-                    <a href="mailto:marchesinileonardo04@gmail.com" class="btn btn-primary">Send Message</a>
                 </div>
             </div>
         </div>
@@ -254,10 +349,11 @@
 
     <!-- FOOTER -->
     <footer class="footer">
-        <p class="footer-text">© 2026 Leonardo Marchesini. All rights reserved.</p>
+        <p class="footer-text">© 2026 Leonardo Marchesini. Designed & Built with passion.</p>
     </footer>
 
     <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
+
